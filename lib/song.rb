@@ -37,7 +37,6 @@ class Song
 end
   
 def Song.find_or_create_by_name(name)
-<<<<<<< HEAD
    find? = self.all.detect {|x| x.name == find_song}
     if find? == nil
       song = self.new 
@@ -49,7 +48,7 @@ def Song.find_or_create_by_name(name)
     end
 =======
     self.find_by_name(name) || self.create_by_name(song_name)
->>>>>>> 4b9ad99ae71b3d10a63579f8a25d861d481f9a33
+
   end
   
   def Song.alphabetical
