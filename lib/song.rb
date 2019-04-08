@@ -46,7 +46,6 @@ def Song.find_or_create_by_name(name)
     else
       find?
     end
-
   end
   
   def Song.alphabetical
